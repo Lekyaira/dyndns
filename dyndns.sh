@@ -1,7 +1,7 @@
 #!/bin/sh
-mydomain="andersonryan.com"
-myhostname="gateway"
-gdapikey="h29JM6NzL5fX_BkvwT2bBkTE6cyPzKn8tn7:5wmc7tq4krfEUNp7jbAB8B"
+mydomain="$1"
+myhostname="$2"
+gdapikey="$3"
 logdest="/var/dyndns/logs"
 
 myip=`curl -s "https://api.ipify.org"`
