@@ -2,7 +2,7 @@
 mydomain="$1"
 myhostname="$2"
 gdapikey="$3"
-logdest="/var/dyndns/logs"
+logdest="/var/logs/dyndns.log"
 
 myip=`curl -s "https://api.ipify.org"`
 dnsdata=`curl -s -X GET -H "Authorization: sso-key ${gdapikey}" "https://api.godaddy.com/v1/domains/${mydomain}/records/A/${myhostname}"`
